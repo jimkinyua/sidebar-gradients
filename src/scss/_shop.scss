@@ -1,0 +1,51 @@
+/* :: Shop CSS */
+
+.single-shop-area {
+    overflow: hidden;
+    @include transition-duration(500ms);
+
+    .shop-thumb {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        @include transition-duration(500ms);
+
+        img {
+            width: 100%;
+            @include transition-duration(500ms);
+        }
+    }
+
+    .product-desc {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        background-color: #f9f9f9;
+
+        span {
+            font-size: 12px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: $text-color;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+
+        .product-price {
+            color: $primary-color;
+            font-size: 24px;
+        }
+    }
+
+    &:hover {
+        .shop-thumb {
+            img {
+                @include transform(scale(1.2));
+            }
+        }
+    }
+}

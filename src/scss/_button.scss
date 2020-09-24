@@ -1,0 +1,42 @@
+/* :: Button CSS */
+
+.btn {
+    @include transition-duration(400ms);
+    font-size: 14px;
+
+    &:focus,
+    &:hover {
+        font-size: 14px;
+    }
+
+    &.btn-rounded {
+        border-radius: 30px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &.btn-lg {
+        font-size: 1.25rem;
+
+        &.btn-rounded {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    &.btn-circle {
+        border-radius: 50%;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
+        &.btn-lg {
+            padding: 0;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+        }
+    }
+}

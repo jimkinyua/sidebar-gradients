@@ -1,0 +1,36 @@
+/* :: Email View CSS */
+
+.mail-windoe-body-area {
+    .mail-window-header {
+        border-bottom: 1px solid $border-color;
+        padding: 0 0 15px 0;
+
+        a {
+            color: $heading-color;
+            font-size: 20px;
+            margin-right: 10px;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .mail-window-text-content {
+        padding-top: 15px;
+
+        .mail-avatra {
+            .mail-avatar-thumb {
+                @include flex(0 0 50px);
+                max-width: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

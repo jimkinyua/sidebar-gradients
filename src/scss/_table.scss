@@ -1,0 +1,47 @@
+/* :: Basic Table CSS */
+
+.basic-table-thumb {
+    max-width: 40px;
+
+    img {
+        border-radius: 50%;
+        max-width: 40px;
+    }
+}
+
+.select,
+#locale {
+    width: 100%;
+}
+
+.like {
+    margin-right: 10px;
+}
+
+.bootstrap-table .fixed-table-pagination > .pagination ul.pagination a {
+    @media #{$breakpoint-xs} {
+        padding: 4px 8px;
+        line-height: 1;
+        font-size: 12px;
+    }
+}
+
+.bootstrap-table .fixed-table-pagination > .pagination-detail .pagination-info {
+    @media #{$breakpoint-xs} {
+        font-size: 12px;
+    }
+}
+
+.bootstrap-table .fixed-table-container .table th,
+.bootstrap-table .fixed-table-container .table td {
+    @media #{$breakpoint-xs} {
+        min-width: 70px;
+    }
+}
+
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+    @media #{$breakpoint-xs} {
+        min-width: 100px;
+    }
+}

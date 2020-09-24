@@ -1,0 +1,111 @@
+/* :: Form CSS */
+
+.form-group {
+    label {
+        font-size: 0.874rem;
+        line-height: 1.4rem;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+}
+
+.form-control {
+    border-color: #dbdbdb;
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+}
+
+.input-group,
+.asColorPicker-wrap {
+    position: relative;
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include align-items-stretch;
+    width: 100%;
+}
+
+.form-group {
+    .file-upload-default {
+        display: none;
+    }
+}
+
+[type="checkbox"] + span:not(.lever) {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+[type="checkbox"] + span:not(.lever)::before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever)::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid $gray-color;
+    border-radius: 1px;
+    @include transition(.2s);
+}
+
+[type="checkbox"]:not(.filled-in) + span:not(.lever)::after {
+    border: 0;
+    @include transform(scale(0));
+}
+
+[type="checkbox"]:checked + span:not(.lever)::before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    @include transform(rotate(40deg));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.success-box {
+    margin: 50px 0;
+    padding: 10px 10px;
+    border: 1px solid $border-color;
+    background: $background-color;
+
+    div {
+        vertical-align: top;
+        display: inline-block;
+        color: $gray-color;
+    }
+
+    img {
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+#example-vertical-wizard h3 {
+    font-size: 20px;
+}
+
+#demo {
+    z-index: 99999999999 !important;
+    position: relative;
+}

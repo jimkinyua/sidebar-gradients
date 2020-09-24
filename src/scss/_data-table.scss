@@ -1,0 +1,88 @@
+/* :: Data Table CSS */
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white-color;
+    box-shadow: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1rem;
+    padding: 0rem 0.5rem;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: $heading-color;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.jsgrid-table > thead > tr > th,
+.jsgrid-table > tfoot > tr > th {
+    border-bottom: 1px solid #ebebeb !important;
+    color: $heading-color;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: $white-color;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    color: $heading-color;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    margin-top: 25px;
+}
+
+.dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    clear: both;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    height: 30px;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_filter input:focus {
+    border: 1px solid rgba(33, 33, 33, 0.12);
+    border-radius: 0;
+    background-color: $white-color;
+    box-shadow: none;
+    color: $heading-color;
+    height: 30px;
+    padding: 0 15px;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    border: 1px solid #dbdbdb;
+    width: 60px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    font-size: 14px;
+}

@@ -1,0 +1,72 @@
+/* :: Notification CSS */
+
+.alert .close {
+    color: $white-color;
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.alert > i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.alert-default i.close {
+    color: $heading-color;
+}
+
+.alert-light-default {
+    color: $heading-color;
+    background-color: $background-color;
+    border-color: $border-color;
+}
+
+.alert-light-primary {
+    color: $primary-color;
+    background-color: #c2d5ff;
+    border-color: $primary-color;
+}
+
+.alert-light-warning {
+    color: $warning-color;
+    background-color: #ffeccb;
+    border-color: $warning-color;
+}
+
+.alert-light-success {
+    color: $green-color;
+    background-color: #b6fff1;
+    border-color: $green-color;
+}
+
+.alert-light-info {
+    color: $info-color;
+    background-color: #bae7ff;
+    border-color: $info-color;
+}
+
+.alert-light-danger {
+    color: $danger-color;
+    background-color: #ffe1e2;
+    border-color: $danger-color;
+}
+
+.alert-light-dark {
+    color: $heading-color;
+    background-color: #acb0c3;
+    border-color: $heading-color;
+}
+
+.alert-light-default i.close {
+    color: $heading-color;
+}
+
+.alert.alert-inverse.growl-animated {
+    font-size: 14px;
+    letter-spacing: 0;
+    border-radius: 3px;
+    box-shadow: none !important;
+}

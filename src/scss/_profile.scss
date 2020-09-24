@@ -1,0 +1,145 @@
+/* :: Profile CSS */
+
+.profile-thumb-contact {
+    h5 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    h6 {
+        font-size: 16px;
+        color: $text-color;
+        font-weight: 400;
+    }
+}
+
+.profile-friend-thumb {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+}
+
+.rating-profile {
+    a {
+        font-size: 13px;
+        color: $primary-color;
+        margin: 0 5px;
+        @include transition-duration(500ms);
+
+        &:hover {
+            color: $green-color;
+        }
+    }
+}
+
+.name-text {
+    h6 {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    span {
+        color: $text-color;
+    }
+}
+
+.profile--tumb {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.link--area {
+    .logo-link {
+        @include flex(0 0 20%);
+        max-width: 20%;
+        width: 20%;
+        height: auto;
+        margin-right: 5px
+    }
+
+    .link--text {
+        @include flex(0 0 80%);
+        max-width: 80%;
+        width: 80%;
+
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+.profile-friends-name {
+    @include display-flex(flex);
+    @include justify-content-between;
+
+    .friend-content-area {
+        .friend-thumb {
+            margin-right: 10px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.profile-navbar {
+    a {
+        color: $dark-text;
+        margin-right: 15px;
+        font-size: 14px;
+        @include transition-duration(500ms);
+
+        @media #{$breakpoint-xs} {
+            font-size: 11px;
+            margin-right: 5px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $green-color;
+        }
+    }
+
+    i {
+        font-size: 12px;
+        margin-right: 3px;
+        color: $primary-color;
+    }
+}
+
+.card-footer-comment > a {
+    font-size: 13px;
+    color: $dark-text-2;
+    margin-right: 15px;
+    @include transition-duration(500ms);
+
+    &:hover,
+    &:focus {
+        color: $green-color;
+    }
+}
+
+.comment-thumb {
+    @include flex(0 0 50px);
+    width: 50px;
+    max-width: 50px;
+    margin-right: 15px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.auth-name {
+    h6 {
+        margin-bottom: 0;
+    }
+}

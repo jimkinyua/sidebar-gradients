@@ -1,0 +1,173 @@
+/* :: Accordion CSS */
+
+.accordion .card .card-header {
+    @include transition-duration(500ms);
+    position: relative;
+    z-index: 1;
+}
+
+.acco-tab-heading-8 {
+    a {
+        color: $white-color;
+        letter-spacing: 0.5px;
+    }
+}
+
+.accordion-content {
+    p {
+        padding: 15px;
+    }
+}
+
+.accordion dd,
+.accordion__panel {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordionTitle,
+.accordion__Heading {
+    background-color: $blue-color;
+    text-align: center;
+    font-weight: 700;
+    padding: 1.20rem 2rem;
+    display: block;
+    text-decoration: none;
+    color: $white-color;
+    @include transition(background-color 0.5s ease-in-out);
+    border-radius: 6px;
+    margin-bottom: 5px;
+
+    &:before {
+        content: "+";
+        font-size: 1.5em;
+        line-height: 1;
+        float: left;
+        @include transition(transform 0.3s ease-in-out);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: darken($blue-color, 10%);
+    }
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+    background-color: darken($blue-color, 10%);
+
+    &:before {
+        @include transform(rotate(-225deg));
+    }
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    @include transition(max-height 1s);
+
+    @media screen and (min-width: 48em) {
+        max-height: 15em;
+        @include transition(max-height 0.5s);
+    }
+}
+
+.accordion-title {
+    &.accordionTitle {
+        &.js-accordionTrigger {
+            color: $white-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.accordionTitle,
+.accordion__Heading {
+
+    &:hover,
+    &:focus {
+        color: $white-color !important;
+    }
+}
+
+.accordion-content {
+    margin-bottom: 0;
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.animateIn {
+    @include animation (accordionIn 0.45s normal ease-in-out both 1);
+}
+
+.animateOut {
+    @include animation (accordionOut 0.45s alternate ease-in-out both 1);
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        @include transform(scale(0.9) rotateX(-60deg));
+        -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+    }
+
+    100% {
+        opacity: 1;
+        @include transform(scale(1));
+    }
+}
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        @include transform(scale(1));
+    }
+
+    100% {
+        opacity: 0;
+        @include transform(scale(0.9) rotateX(-60deg));
+    }
+}
+
+.accordian-style-1 {
+    a {
+        color: $primary-color;
+
+        &.collapsed {
+            color: $dark-text;
+        }
+    }
+
+    .card {
+        border-left: 3px solid $primary-color;
+        border-radius: 0;
+    }
+}
+
+.accordian-style-2 {
+    a {
+        color: $primary-color;
+
+        &.collapsed {
+            color: $dark-text;
+        }
+    }
+}
+
+.accordian-thumbnail {
+    @include flex(0 0 30%);
+    max-width: 30%;
+    width: 30%;
+
+    @media #{$breakpoint-xs} {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

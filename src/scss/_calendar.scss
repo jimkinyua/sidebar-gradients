@@ -1,0 +1,144 @@
+/* :: Calendar CSS */
+
+.fc-month-button.btn.btn-primary,
+.fc-agendaWeek-button.btn.btn-primary,
+.fc-agendaDay-button.btn.btn-primary {
+    background-color: transparent;
+    color: $dark-text !important;
+    border: 1px solid $border-color;
+    font-size: 14px;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.fc-prev-button.btn.btn-primary,
+.fc-next-button.btn.btn-primary {
+    background-color: transparent;
+    color: $dark-text !important;
+    border: 1px solid $border-color;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.fc-today-button.btn.btn-primary.disabled {
+    background-color: transparent;
+    color: $dark-text !important;
+    border: 1px solid $border-color;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.fc-today-button.btn.btn-primary {
+    background-color: $primary-color;
+    color: #fff !important;
+    border: 1px solid $primary-color;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.fc-toolbar h2 {
+    font-size: 18px;
+}
+
+.fc-day-header span,
+.fc-week-number span,
+.fc-bootstrap4 a:not([href]):not([tabindex]),
+.fc-bootstrap4 .fc-axis,
+.fc-bootstrap4 .fc-axis.fc-time {
+    font-size: 12px;
+    color: #9b9b9b;
+    text-transform: capitalize;
+}
+
+.fc-month-button.btn.btn-primary,
+.fc-agendaWeek-button.btn.btn-primary,
+.fc-agendaDay-button.btn.btn-primary {
+    text-transform: capitalize;
+    font-size: 12px;
+
+    &.active {
+        color: #fff !important;
+        border: none;
+        border-radius: 2px;
+        z-index: 10;
+    }
+}
+
+.fc-day-grid-event.fc-h-event.fc-event {
+    padding: 8px 12px;
+    border: none;
+    background-color: $primary-color !important;
+    border-radius: 0;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event.fc-event-warning {
+    background-color: #f39c12 !important;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event.fc-event-info {
+    background-color: #1abc9c !important;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event.fc-event-danger {
+    background-color: #e67e22 !important;
+}
+
+.fc-time-grid-event.fc-v-event {
+    border: none;
+    border-radius: 0;
+    padding: 5px;
+    background-color: $primary-color !important;
+}
+
+.fc-time-grid-event.fc-v-event {
+    background-color: $primary-color;
+}
+
+.fc-nonbusiness.fc-bgevent {
+    background: $white-color !important;
+    opacity: 1;
+}
+
+.fc-now-indicator {
+    border-color: $primary-color;
+}
+
+.fc-time-grid .fc-now-indicator-line {
+    border-top-color: $primary-color;
+}
+
+.external-event.dot-outline {
+    padding: 15px 15px 12px;
+    text-transform: capitalize;
+    background-color: $white-color;
+    border-left: 5px solid $primary;
+}
+
+.event-filter {
+    position: relative;
+    z-index: 1;
+
+    .custom-control-label {
+        font-size: 16px;
+        color: $dark-text;
+        text-transform: capitalize;
+    }
+}
+
+.calender-content {
+    .row {
+        .col-xl-3 {
+            @media #{$breakpoint-lg} {
+                @include order(50);
+            }
+
+            @media #{$breakpoint-md} {
+                @include order(50);
+            }
+
+            @media #{$breakpoint-xs} {
+                @include order(50);
+            }
+        }
+    }
+}

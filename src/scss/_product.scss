@@ -1,0 +1,72 @@
+/* :: Product Edit CSS */
+
+.tabs-container {
+    &.product-edit {
+        position: relative;
+        z-index: 1;
+
+        .nav-tabs {
+            border-bottom: none;
+            margin-bottom: 30px;
+
+            li {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .nav-tabs > li > a {
+        position: relative;
+        z-index: 1;
+        color: $text-color;
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+        text-transform: capitalize;
+    }
+
+    .input-group-addon {
+        background-color: $white-color;
+        border: 1px solid #dbdbdb;
+        border-radius: 1px;
+        color: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 16px;
+        text-align: center;
+        border-right: none;
+    }
+
+    .input-group.date .input-group-addon i {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+    }
+
+    .product-delet-btn {
+        text-align: center;
+    }
+
+    .form-control.product {
+        margin-bottom: 0;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: $white-color;
+        background-color: $primary-color;
+        border-radius: 4px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #323232;
+        font-weight: 500;
+    }
+
+    td img {
+        max-width: 50px;
+    }
+}
